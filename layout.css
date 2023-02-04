@@ -1,0 +1,176 @@
+/**
+ * CONTENTS
+ *
+ * LAYOUT
+ * Elements.............Rules for the container and items
+ * Modifiers............Media queries for the layout.
+ *
+ * WHITESPACES
+ * Whitespaces..........Whitespaces between items.
+ */
+
+
+
+
+
+/*------------------------------------*\
+  #ELEMENTS
+\*------------------------------------*/
+
+.main-head {
+  grid-area:  header;
+}
+
+.nav-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.navbar-nav li {
+  text-align: right;
+  margin-right: 0.5rem;
+}
+
+.nav-item {
+  padding: 0.2rem;
+}
+
+.main {
+  grid-area: main;
+} 
+ 
+.services-gift {
+  grid-area: gift;
+}
+
+.services-graphic {
+  grid-area: graphic;
+}
+
+.services-decoration {
+  grid-area: decoration;
+}
+
+.main-title, .services {
+  text-align: center;
+}  
+
+.contact {
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2rem;
+}
+
+footer {
+    grid-area: footer;
+ }
+  
+ .page {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 23% 1fr 5%;
+  height: 100vh;
+  grid-template-areas: 
+  "header"
+  "main"
+  "footer";
+}
+     
+
+
+
+
+/*------------------------------------*\
+  #MODIFIERS
+\*------------------------------------*/
+
+@media (min-width: 800px) {
+  .navbar-nav li {
+  display: inline;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "gift graphic decoration"
+} 
+}
+  
+.social-1:hover, .social-2:hover, .social-3:hover {
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.increase-me {
+  animation-name: increase;
+  animation-duration: 0.9s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes increase {
+  0% {transform: scale(1.1);}
+  100% {transform: scale(0.9);}
+}
+
+.icon-gift:hover {
+  content: url('assets/gift2.png');
+}
+
+.icon-graphic:hover {
+  content: url('assets/ad2.png');
+}
+
+.icon-decoration:hover {
+  content: url('assets/decoration2.png');
+}
+
+a.nav-link:hover {
+  color: var(--secondary-font-color);
+}
+
+
+
+/*------------------------------------*\
+  #WHITESPACES
+\*------------------------------------*/
+  
+.icon-gift, .icon-graphic, .icon-decoration {
+  padding: 1rem
+}
+
+.title-gift, .title-ad, .title-decoration {
+  padding: 1rem;
+}
+
+.main-head, main {
+  padding: 1rem;
+}
+
+.contact {
+padding-top: 3rem;
+}
+
+.phone-me {
+padding: 2rem;
+}
+
+.services-gift, .services-graphic, .services-decoration {
+padding-top: 2rem;
+}

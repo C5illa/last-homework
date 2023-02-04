@@ -1,0 +1,117 @@
+/**
+ * OVERVIEW
+ *
+ * This project is separated to the following style sheets:
+ *
+ * base.css.............Base rules.
+ * layout.css...........Rules for the layout of the page.
+ * components.css.......Rules for the components that build up the page.
+ */
+
+
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Variables............Globally-available colors.
+ * Box-sizing...........Better default `box-sizing`.
+ * 
+ * BASE STYLES
+ * Headings.............H3, H4, other heading styles.
+ * Base font............Base font style.
+ * Other font styles....Items with other style than the base font.
+ *
+ */
+
+ 
+/*------------------------------------*\
+  #VARIABLES
+\*------------------------------------*/
+
+:root {
+  --bg-color:             #1A1A1D;
+  --font-color:           #6b6b6b;
+  --secondary-font-color: #ffffff;
+  --highlight-color:      #00B3CC;
+}
+
+
+
+
+
+/*------------------------------------*\
+#BOX-SIZING
+\*------------------------------------*/
+
+* {
+box-sizing: border-box;
+}
+
+
+
+
+
+/*------------------------------------*\
+#HEADINGS
+\*------------------------------------*/
+
+h3            { font-size: clamp(14px, 3.5vw, 25px); color: var(--secondary-font-color);}
+                
+h4            { font-size: clamp(16px, 3.6vw, 22px);   color: var(--secondary-font-color);}
+
+.main-title   { font-size: clamp(8px, 2.5vw, 14px);  color: var(--secondary-font-color);}
+
+h3 {
+  text-transform: uppercase;
+}
+
+h4 {
+  line-height: 1.6rem;
+}
+
+
+
+
+
+/*------------------------------------*\
+#BASE FONT
+\*------------------------------------*/
+
+html {
+font-size:   min(3.5vw, 15px);
+font-family: 'Work Sans', sans-serif;
+color:       var(--font-color);
+}
+
+
+
+
+
+/*------------------------------------*\
+#OTHER FONT STYLES
+\*------------------------------------*/
+
+.main-title {
+font-family: 'Merriweather', serif;
+}
+
+.nav-link {
+text-decoration: none;
+color: var(--highlight-color);
+text-transform: uppercase;
+font-weight: bold;
+font-size: min(4vw, 16px);
+}
+
+.phone-me {
+color: var(--highlight-color);
+font-size: 2rem;
+font-weight: bold;
+}
+
+.all-rights {
+text-transform: uppercase;
+font-size: min(3vw, 12px);
+font-weight: bold;
+color: var(--bg-color)
+}

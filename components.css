@@ -1,0 +1,65 @@
+/**
+ * CONTENTS
+ *
+ * HEADER
+ *
+ * MAIN CONTENT
+ *
+ * FOOTER
+ */
+
+
+
+
+
+/*------------------------------------*\
+  #HEADER
+\*------------------------------------*/
+
+.page {
+  background-color: var(--bg-color);
+}
+
+.nav-logo-logo {
+  max-height: 5vh;
+}
+
+
+  
+
+  
+/*------------------------------------*\
+  #MAIN CONTENT
+\*------------------------------------*/
+  
+.icon-gift, .icon-graphic, .icon-decoration {
+  max-width: 7.5rem;
+}
+
+.gift-text, .graphic-text, .decoration-text, .contact-text {
+  margin: auto 20%
+}
+
+.social-1, .social-2, .social-3 {
+  width: 3.5rem;
+  padding: 0.3rem;
+}
+  
+.contact, .services {
+  background-color: var(--bg-color);
+}
+
+
+
+
+
+/*------------------------------------*\
+  #FOOTER
+\*------------------------------------*/
+  
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--highlight-color);
+}
