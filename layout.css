@@ -64,6 +64,11 @@
   text-align: center;
 }  
 
+.phone-me {
+  display: flex;
+  justify-content: center;
+}
+
 .contact {
   text-align: center;
 }
